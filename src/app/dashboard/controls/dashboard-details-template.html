@@ -1,0 +1,55 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12">
+      <!-- <div class="row">
+        <div class="col-sm-12">
+          <h6 class="text-muted">
+            Radius in kilometers
+          </h6>
+          <input type="number" ng-model="map._concavity" step="0.01" ng-change="map.updateConvexHull()">
+        </div>
+      </div> -->
+
+      <div class="row">
+        <div class="tab-container" role="tabpanel">
+          <ul class="nav nav-tabs" role="navigation">
+            <li role="presentation" class="active">
+              <a href="" data-target="#tab1" aria-controls="tab1" role="tab" data-toggle="tab"></a>
+            </li>
+          </ul>
+
+          <div class="tab-content">
+            <div class="tab-pane active" id="tab1" role="tabpanel">
+              <div class="row">
+                <h3 style="margin-left: 30px;">Praças</h3>
+                <div class="col-sm-12">
+                  <obj-list type="praca" ids="01;02;03;05;08;10;11;12;13;14;15;16;17;18;19;20"></obj-list>
+                </div>
+              </div>
+              <div class="row">
+                <h3 style="margin-left: 30px;">Vendedores</h3>
+                <div class="col-sm-12">
+                  <obj-list type="vendedores" ids="001;004;011;037;043;046;047;048;049;050;056;058;059;070;072;075;078;085;088;089;090;091;094;096;103;104;105;110"></obj-list>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-6">
+      <br>
+      <footer class="footer pull-right" style="margin: -15px -15px;">
+        <span style="font-size: 12px;">
+          <strong>Powered by</strong>
+        </span>
+        <a href="http://www.gogeo.io" target="_blank">
+          <img src="shared/images/gogeo-brand.png" alt="" width="40%" height="40%">
+        </a>
+      </footer>
+    </div>
+  </div>
+</div>

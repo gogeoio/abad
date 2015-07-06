@@ -1,0 +1,1 @@
+declare function hull(points: Array<any>, concavity: number, pointsFormat?: Array<string>);

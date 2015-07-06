@@ -1,0 +1,9 @@
+<div class="container">
+  <h3>Praças</h3>
+
+  <div>
+    <span ng-click="objList.toggle(item)" ng-repeat="item in objList.list" class="label label-{{ item.enabled ? '' : 'disabled' }} like-a-button" style="background-color: {{ item.enabled ? item.color : '' }}">
+      {{ item.id }}
+    </span>
+  </div>
+</div>

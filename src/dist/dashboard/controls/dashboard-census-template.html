@@ -1,0 +1,31 @@
+<div class="container" style="width: 100%;">
+  <div class="row">
+    <div class="col-sm-12">
+      <nvd3 options="dashcensus.incomeChartOptions" data="dashcensus.incomeData" api="dashcensus.incomeChartApi"></nvd3>
+    </div>
+
+    <div class="chart-legend">
+      <span ng-repeat="item in dashcensus.incomeData[0].values" class="badge legend-item" style="background-color: {{ item.color }}">{{ item.label }}</span>&nbsp;
+    </div>
+  </div>
+
+  <hr class="delimiter">
+
+  <div class="row">
+    <div class="col-sm-12">
+      <nvd3 options="dashcensus.ageChartOptions" data="dashcensus.ageData" api="dashcensus.ageChartApi"></nvd3>
+    </div>
+
+    <div class="chart-legend">
+      <span ng-repeat="age in dashcensus.ageData[0].values" class="badge legend-item" style="background-color: {{ age.color }}">{{ age.label }}</span>&nbsp;
+    </div>
+  </div>
+
+  <hr class="delimiter">
+
+  <div class="row">
+    <div class="col-sm-12">
+      <nvd3 options="dashcensus.pieChartOptions" data="dashcensus.racesData" api="dashcensus.pieChartApi"></nvd3>
+    </div>
+  </div>
+</div>

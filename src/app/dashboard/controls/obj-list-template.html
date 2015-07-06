@@ -1,0 +1,9 @@
+<div class="container" style="width: 100%;">
+  <div class="row">
+    <div class="col-sm-12">
+      <span ng-click="objList.toggle(item)" ng-repeat="item in objList.list" class="label label-{{ item.enabled ? '' : 'disabled' }} like-a-button" style="background-color: {{ item.enabled ? item.color : '' }}">
+        {{ item.id }}
+      </span>
+    </div>
+  </div>
+</div>

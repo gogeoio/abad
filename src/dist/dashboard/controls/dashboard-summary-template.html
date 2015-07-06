@@ -1,0 +1,72 @@
+<div class="container" style="width: 100%;">
+  <div class="row">
+    <div class="col-sm-4 tweets-amounts-plus">
+      <label>
+        Companies
+      </label>
+      <span>{{ dashsummary.companies | number:0 }}</span>
+    </div>
+
+    <div class="col-sm-4 tweets-amounts-plus">
+      <label>
+        Crimes
+      </label>
+      <span>{{ dashsummary.crimesCount | number:0 }}</span>
+    </div>
+
+    <div class="col-sm-4 tweets-amounts-plus">
+      <label>
+        Households
+      </label>
+      <span>{{ dashsummary.households | number:0 }}</span>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-4 tweets-amounts-plus">
+      <label>
+        Families
+      </label>
+      <span>{{ dashsummary.families | number:0 }}</span>
+    </div>
+
+    <div class="col-sm-4 tweets-amounts-plus">
+      <label>
+        Nonfamily
+      </label>
+      <span>{{ dashsummary.nonfamily | number:0 }}</span>
+    </div>
+
+     <div class="col-sm-4 tweets-amounts-plus">
+      <label>
+        Income / household
+      </label>
+      <span>{{ dashsummary.householdsIncome | currency }}</span>
+    </div>
+  </div>
+
+  <hr class="delimiter">
+
+  <div class="row">
+    <h4>Top 5 crime types</h4>
+    <div class="col-sm-12">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <td>Crime Type</td>
+            <td>Count</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="crime in dashsummary.crimes">
+            <td>{{crime.key | capitalize:all}}</td>
+            <td>{{crime.doc_count | number}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <hr class="delimiter">
+
+</div>
