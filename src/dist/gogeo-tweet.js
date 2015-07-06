@@ -866,7 +866,7 @@ var gogeo;
             this.$timeout = $timeout;
             this.service = service;
             this.metrics = metrics;
-            this._concavity = 0.5;
+            this._concavity = 1;
             this._lastType = null;
             this._lastObj = null;
             this.query = null;

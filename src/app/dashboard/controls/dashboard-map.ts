@@ -17,7 +17,7 @@ module gogeo {
       MetricsService.$named
     ];
 
-    _concavity: number = 0.5;
+    _concavity: number = 1;
     _lastType: string = null;
     _lastObj: any = null;
     map: L.Map;
